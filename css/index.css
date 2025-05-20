@@ -1,0 +1,173 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the loader is on top of everything */
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #000000; /* Loader background color */
+  transition: opacity 1s, visibility 1s;
+  transition-delay: 0.5s;
+}
+
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+@keyframes sizeIn {
+  from {
+    background-size: 135vw;
+  }
+
+  to {
+    background-size: 100vw;
+  }
+}
+
+#titlePage {
+  animation: sizeIn 2s ease;
+  animation-delay: 0.25s;
+  background-image: url("../img/titlePage.png");
+  background-position: center bottom; /* Start at the top */
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-attachment: scroll;
+  padding-bottom: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80vh;
+  box-sizing: border-box;
+}
+
+
+#titlePage h1 {
+  text-align: left;
+  margin: 3vh 5vw;
+  color: white;
+}
+
+#titlePage h6 {
+  text-align: left;
+  margin: 1em 5vw;
+  color: #ffffff;
+}
+
+#titlePage a {
+  color: #000000;
+  background-color: #bfbfbf;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, font-weight 0.7s ease;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+}
+
+#titlePage a:hover {
+  background-color: #af0000;
+  font-weight: 800;
+}
+
+
+#whereFound {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  width: 100%; /* Ensure it takes the full width */
+  box-sizing: border-box; /* Include padding/borders in height calculation */
+  text-align: center; /* Ensure inner text is centered */
+  padding: 1em 25vw; /* Optional padding for spacing */
+}
+
+#whereFound div {
+  background: #b3b3b3;
+  width: 80%;
+  height: 300px;
+  border-radius: 20px;
+  margin: 2em;
+}
+
+#whereFound p {
+  margin: 1em;
+}
+
+#weapons {
+  text-align: center;
+}
+
+
+#quotes {
+  justify-content: center;
+  text-align: left;
+  padding: 1rem 15vw;
+}
+
+.quote {
+  margin: 2rem 2rem 4rem;
+}
+
+.quote h6, p {
+  padding: 0 2rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #titlePage h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  #titlePage h6 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #whereFound {
+    padding: 1rem;
+  }
+
+  #weapons {
+    width: 90%; /* Expands section width to 90% of the viewport width */
+    margin: 0 auto; /* Center it */
+    padding: 1em; /* Add breathing space */
+  }
+
+  #weaponsContainer > div {
+    width: 100%; /* Each weapon container spans full available width */
+    margin-bottom: 1em; /* Add spacing between them */
+  }
+
+  /* Improve the width of #quotes */
+  #quotes {
+    width: 90%; /* Wider quotes section for mobile */
+    margin: 0 auto; /* Center horizontally */
+    padding: 1em; /* Add slight padding */
+  }
+
+  .quote {
+    margin: 1rem auto; /* Center the individual blocks */
+    width: 100%; /* Make quotes span the full width of the container */
+  }
+}
+

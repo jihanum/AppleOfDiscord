@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple of Discord · Website Project</title>
+
+  <link rel="stylesheet" href="css/defaults.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/scrollAnimations.css">
+  <link rel="stylesheet" href="css/scroll_button_styles.css">
+
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="img/Icon/appleIcon.ico" sizes="any">
+  <link rel="icon" href="img/Icon/appleIcon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/Icon/appleIcon.png">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+  <script src="js/scrollEffects.js"></script>
+  <script src="js/loadingScreen.js"></script>
+  <script src="js/hamMenu.js"></script>
+  <script src="js/scrollButtonBehavior.js"></script>
+
+</head>
+
+<body>
+<button id="upArrowButton" onclick="scrollToTitlePage()">&#8679;</button>
+<div class="cursor"></div>
+<script>
+  const cursor = document.querySelector('.cursor');
+
+  document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY - scrollY) + "px; left: " + (e.pageX) + "px")
+  })
+
+  document.addEventListener('click', () => {
+    cursor.classList.add('click');
+
+    setTimeout(() => {
+      cursor.classList.remove('click');
+    }, 500)
+  })
+</script>
+
+<div class="loader"></div>
+<nav id="header" class="sticky">
+  <div id="logo">
+    <img src="img/Icon/appleIcon.png" alt="appleIcon.png">
+    <p id="headerTitle">Apple of Discord</p>
+  </div>
+
+  <ul id="linksHeader">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="html/faq.html">FAQ</a></li>
+    <li><a href="html/aboutUs.html">About Us</a></li>
+    <li><a href="html/references.html">References</a></li>
+  </ul>
+
+  <div class="hamMenu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="off-screen-menu">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="html/faq.html">FAQ</a></li>
+      <li><a href="html/aboutUs.html">About Us</a></li>
+      <li><a href="html/references.html">References</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="titlePage" class="show-animation">
+  <div style="text-align: left;">
+    <h1 class="animate">Apple of Discord</h1>
+    <h6 class="animate">Ji Han Um, Maya Saligumba, Rozita</h6>
+    <h6 class="animate">Literary Studies 10 Enriched</h6>
+  </div>
+  <div style="text-align: center;">
+    <a style="padding: 0.75em 1em;" href="#whereFound">
+      Learn More &rarr;
+    </a>
+  </div>
+</section>
+
+
+<hr>
+
+<section id="whereFound">
+  <h2>Where is it found?</h2>
+  <div id="map"></div>
+  <p>The apple of discord is found at Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+    aute irure dolor in reprehenderit in
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit
+    anim id est laborum.</p>
+</section>
+
+<section id="weapons">
+  <h2 class="animate">Weapons</h2>
+  <div id="weaponsContainer">
+    <div>
+      <p>aaa</p>
+    </div>
+
+    <div>
+      <p>aaa</p>
+    </div>
+
+    <div>
+      <p>aaa</p>
+    </div>
+
+    <div>
+      <p>aaa</p>
+    </div>
+  </div>
+</section>
+
+<section id="quotes">
+  <div class="quote">
+    <h3>"Lorem Ipsum Dolor Amet"</h3>
+    <h6>Source</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div class="quote">
+    <h3>"Lorem Ipsum Dolor Amet"</h3>
+    <h6>Source</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div class="quote">
+
+    <h3>"Lorem Ipsum Dolor Amet"</h3>
+    <h6>Source</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+</section>
+
+
+<section id="footer" class="show-animation">
+  <img src="img/Icon/appleIcon.png" alt="appleIcon.png"/>
+  <div>
+    <p style="font-weight: 900;" class="siteName">Apple of Discord</p>
+    <span></span>
+    <p>Project by <a href="html/aboutUs.html" style="font-weight: 600;">Ji Han Um, Maya Saligumba, and Rozita</a></p>
+    <span></span>
+    <p>Designed and coded by Ji Han Um</p>
+    <span></span>
+    <p>2025</p>
+
+
+  </div>
+  <p id="bigClassName" style="font-weight: 600; margin-left: auto; font-size: 1.25em;">Literary Studies 10 Enriched (Ms.
+    Moreno)</p>
+  <p id="smallClassName" style="font-weight: 600; margin-bottom: 2em;">Lit. Studies 10E (Ms. Moreno)</p>
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
