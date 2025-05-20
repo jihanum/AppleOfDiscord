@@ -36,13 +36,13 @@
 #logo img {
   width: 3em;
   height: 3em;
-  margin: 1.25em;
+  margin: 1.25em 0 1.25em 1.25em;
   transition: width 0.7s ease, height 0.7s ease;
 }
 
 #logo p {
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 800;
   transition: font-weight 0.7s ease;
 }
 
