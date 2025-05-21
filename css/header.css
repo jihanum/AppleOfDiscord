@@ -142,12 +142,22 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .hamMenu {
     display: block;
   }
 
   #linksHeader {
     display: none;
+  }
+
+  #logo p {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #linksHeader a {
+    font-size: 0.75em;
   }
 }
