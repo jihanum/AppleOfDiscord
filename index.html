@@ -32,7 +32,7 @@
 
   <script src="./js/scrollEffects.js"></script>
   <script src="./js/loadingScreen.js"></script>
-  <script src="./js/hamMenu.js"></script>=
+  <script src="./js/hamMenu.js"></script>
 
 </head>
 
@@ -43,14 +43,6 @@
 
   document.addEventListener('mousemove', e => {
     cursor.setAttribute("style", "top: " + (e.pageY - scrollY) + "px; left: " + (e.pageX) + "px")
-  })
-
-  document.addEventListener('click', () => {
-    cursor.classList.add('click');
-
-    setTimeout(() => {
-      cursor.classList.remove('click');
-    }, 500)
   })
 </script>
 
@@ -101,7 +93,7 @@
 <hr>
 
 <section id="whereFound">
-  <h2>Where is it found?</h2>
+  <h3>Where is it found?</h3>
   <div id="map"></div>
   <p>The apple of discord is found at Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua.
@@ -113,7 +105,7 @@
 </section>
 
 <section id="weapons">
-  <h2 class="animate">Weapons</h2>
+  <h3 class="animate">Weapons</h3>
   <div id="weaponsContainer">
     <div>
       <p>aaa</p>
@@ -135,7 +127,7 @@
 
 <section id="quotes">
   <div class="quote">
-    <h3>"Lorem Ipsum Dolor Amet"</h3>
+    <h4>"Lorem Ipsum Dolor Amet"</h4>
     <h6>Source</h6>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -144,7 +136,7 @@
   </div>
 
   <div class="quote">
-    <h3>"Lorem Ipsum Dolor Amet"</h3>
+    <h4>"Lorem Ipsum Dolor Amet"</h4>
     <h6>Source</h6>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -154,7 +146,7 @@
 
   <div class="quote">
 
-    <h3>"Lorem Ipsum Dolor Amet"</h3>
+    <h4>"Lorem Ipsum Dolor Amet"</h4>
     <h6>Source</h6>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

@@ -9,13 +9,18 @@ document.addEventListener('DOMContentLoaded', () => {
       let top = window.scrollY;
 
       sections.forEach(sec => {
-        let offset = sec.offsetTop - window.innerHeight * 0.5;
+        let offset = sec.offsetTop - window.innerHeight * 0.9;
+        let offset2 = sec.offsetTop - window.innerHeight * 0.1;
         let height = sec.offsetHeight;
 
-        if (top >= offset && top < offset + height) {
+        if ((top >= offset && top < offset + height) || (top >= offset2 && top < offset2 + height)) {
           sec.classList.add('show-animation');
         }
       });
     }, 15);
   });
 });
+
+
+
+// add offset2 condition

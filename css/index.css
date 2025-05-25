@@ -11,6 +11,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+body {
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -22,8 +27,8 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   background-color: #000000; /* Loader background color */
-  transition: opacity 1s, visibility 1s;
-  transition-delay: 0.5s;
+  transition: opacity 0.7s, visibility 0.7s;
+  transition-delay: 0.2s;
 }
 
 
@@ -44,9 +49,9 @@
 }
 
 #titlePage {
-  animation: sizeIn 2s ease;
+  animation: sizeIn 1.25s ease;
   animation-delay: 0.25s;
-  background-image: url("../img/titlePage.png");
+  background-image: url("../img/titlePage.webp");
   background-position: center bottom; /* Start at the top */
   background-repeat: no-repeat;
   background-size: 100vw;
