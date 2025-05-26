@@ -11,25 +11,20 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-body {
-  perspective: 1px;
-  transform-style: preserve-3d;
-}
-
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000; /* Ensure the loader is on top of everything */
-  width: 100vw;
-  height: 100vh;
-  display: flex; /* Center content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background-color: #000000; /* Loader background color */
-  transition: opacity 0.7s, visibility 0.7s;
-  transition-delay: 0.2s;
-}
+/*.loader {*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  z-index: 1000; !* Ensure the loader is on top of everything *!*/
+/*  width: 100vw;*/
+/*  height: 100vh;*/
+/*  display: flex; !* Center content *!*/
+/*  justify-content: center; !* Center horizontally *!*/
+/*  align-items: center; !* Center vertically *!*/
+/*  background-color: #000000; !* Loader background color *!*/
+/*  transition: opacity 0.7s, visibility 0.7s;*/
+/*  transition-delay: 0.2s;*/
+/*}*/
 
 
 .loader-hidden {
@@ -93,6 +88,156 @@ body {
 }
 
 
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em 15vw;
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+}
+
+#aboutTitle {
+  display: flex;
+  align-items: center;
+}
+
+#aboutTitle p, #aboutTitle h3 {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+#aboutTitle div {
+  margin: 0 5rem;
+}
+
+#aboutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 10vw;
+}
+
+#aboutContainer div {
+  margin: 1em;
+  padding: 1em;
+  background-color: #b3b3b3;
+}
+
+@media screen and (max-width: 1000px) {
+  #about {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  #aboutContainer {
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+
+  #aboutContainer div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #aboutTitle {
+    display: block;
+  }
+
+  #aboutTitle h3, #aboutTitle p {
+    text-align: center;
+  }
+
+  #aboutTitle div {
+    margin: 7vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+#appearances h3 {
+  text-align: center;
+}
+
+#appearancesContainer {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 1rem;
+  margin: 1rem 20vw;
+}
+
+@media screen and (max-width: 1000px) {
+  #appearancesContainer {
+    grid-template-columns: 50% 50%;
+    margin: 1rem 10vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #appearancesContainer {
+    grid-template-columns: 100%;
+  }
+}
+
+#appearancesContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*background-color: #ff411c;*/
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+#appearancesContainer div p, #appearancesContainer div h3 {
+  margin: 1rem;
+  text-align: center;
+}
+
+#appearancesContainer div img {
+  margin: 1rem;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #whereFound {
   display: flex; /* Use flexbox for alignment */
   flex-direction: column; /* Stack content vertically */
@@ -103,6 +248,7 @@ body {
   text-align: center; /* Ensure inner text is centered */
   padding: 1em 25vw; /* Optional padding for spacing */
 }
+
 
 #whereFound div {
   background: #b3b3b3;
@@ -116,9 +262,25 @@ body {
   margin: 1em;
 }
 
+
+
+
+
+
+
+
+
 #weapons {
   text-align: center;
 }
+
+
+
+
+
+
+
+
 
 
 #quotes {
@@ -131,13 +293,20 @@ body {
   margin: 2rem 2rem 4rem;
 }
 
-.quote h6, p {
+.quote h6, .quote p {
   padding: 0 2rem;
 }
 
 
 
-@media screen and (max-width: 768px) {
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
   #titlePage h1 {
     font-size: 3em;
     text-align: center;
