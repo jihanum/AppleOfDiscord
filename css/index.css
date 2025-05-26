@@ -11,20 +11,20 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-/*.loader {*/
-/*  position: fixed;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  z-index: 1000; !* Ensure the loader is on top of everything *!*/
-/*  width: 100vw;*/
-/*  height: 100vh;*/
-/*  display: flex; !* Center content *!*/
-/*  justify-content: center; !* Center horizontally *!*/
-/*  align-items: center; !* Center vertically *!*/
-/*  background-color: #000000; !* Loader background color *!*/
-/*  transition: opacity 0.7s, visibility 0.7s;*/
-/*  transition-delay: 0.2s;*/
-/*}*/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the loader is on top of everything */
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #000000; /* Loader background color */
+  transition: opacity 0.7s, visibility 0.7s;
+  transition-delay: 0.2s;
+}
 
 
 .loader-hidden {
