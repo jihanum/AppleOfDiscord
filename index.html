@@ -54,9 +54,8 @@
     </div>
 
     <ul id="linksHeader">
-        <li><a href="./index.html">Home</a></li>
+        <li style="background-color: #af0000;"><a href="./index.html" >Home</a></li>
         <li><a href="./html/faq.html">FAQ</a></li>
-        <li><a href="./html/aboutUs.html">About Us</a></li>
         <li><a href="./html/references.html">References</a></li>
     </ul>
 
@@ -70,7 +69,6 @@
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./html/faq.html">FAQ</a></li>
-            <li><a href="./html/aboutUs.html">About Us</a></li>
             <li><a href="./html/references.html">References</a></li>
         </ul>
     </div>
@@ -168,7 +166,7 @@
 
 <section id="whereFound">
     <h3>Where is it found?</h3>
-    <div id="map"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224136.7660721755!2d22.67367324871297!3d39.656826513735375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a70d07a9815a83%3A0x933c467a77e6dfc9!2sPelion!5e0!3m2!1sen!2sca!4v1748231783274!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p>The apple of discord is found at Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -181,41 +179,65 @@
 
 <section id="species">
     <h3>Species</h3>
-    <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-    <h4>Apple Species 123</h4>
-    <p>Explanation of how exactly this may be the type of species lorem ipsum dolor amet aaaaaaaaaaaaaaaaaaaaaaaaaa.</p>
+    <div id="speciesContainer">
+        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+        <div>
+            <h4>Apple Species 123</h4>
+            <p>Explanation of how exactly this may be the type of species lorem ipsum dolor amet
+
+                aaaaaaaaaaaaaaaaaaaaaaaaaa.</p>
+        </div>
+    </div>
 </section>
 
+<!--Add text and check media screen conditions of history-->
 <section id="history">
     <h3>The History</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac tempor libero. Morbi luctus lobortis libero,
+    <p id="historySection1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac tempor libero. Morbi luctus
+        lobortis
+        libero,
         sodales ultricies neque tincidunt id. Nulla facilisi. Curabitur ac magna rutrum, aliquam sem et, elementum
         magna. Proin id vestibulum lorem. Nulla sodales orci sapien, eu dapibus augue egestas sit amet. Vivamus non eros
         risus. In elit massa, elementum sed consequat sed, commodo vitae velit.</p>
-    <p>Nunc id dignissim purus. Nunc leo eros, lobortis ac nunc non, pretium laoreet enim. Vestibulum tincidunt leo non
-        facilisis sagittis. Suspendisse commodo, leo eu cursus interdum, velit dui vestibulum turpis, at maximus urna
-        erat ac neque. Nam vel tristique tellus. In hac habitasse platea dictumst. Phasellus finibus ligula in justo
-        euismod, ut pharetra enim ornare. Morbi non varius libero. Nam rutrum tristique libero, sed aliquam metus mattis
-        eget. Duis iaculis eleifend tellus, vel condimentum sapien vulputate at. Quisque imperdiet quam eget semper
-        posuere.</p>
-    <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-    <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-    <p>Nunc id dignissim purus. Nunc leo eros, lobortis ac nunc non, pretium laoreet enim. Vestibulum tincidunt leo non
-        facilisis sagittis. Suspendisse commodo, leo eu cursus interdum, velit dui vestibulum turpis, at maximus urna
-        erat ac neque. Nam vel tristique tellus. In hac habitasse platea dictumst. Phasellus finibus ligula in justo
-        euismod, ut pharetra enim ornare. Morbi non varius libero. Nam rutrum tristique libero, sed aliquam metus mattis
-        eget. Duis iaculis eleifend tellus, vel condimentum sapien vulputate at. Quisque imperdiet quam eget semper
-        posuere.</p>
-    <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac tempor libero. Morbi luctus lobortis libero,
-        sodales ultricies neque tincidunt id. Nulla facilisi. Curabitur ac magna rutrum, aliquam sem et, elementum
-        magna. Proin id vestibulum lorem. Nulla sodales orci sapien, eu dapibus augue egestas sit amet. Vivamus non eros
-        risus. In elit massa, elementum sed consequat sed, commodo vitae velit.</p>
+    <div id="historySection2">
+        <p>Nunc id dignissim purus. Nunc leo eros, lobortis ac nunc non, pretium laoreet enim. Vestibulum tincidunt leo
+            non
+            facilisis sagittis. Suspendisse commodo, leo eu cursus interdum, velit dui vestibulum turpis, at maximus
+            urna
+            erat ac neque. Nam vel tristique tellus. In hac habitasse platea dictumst. Phasellus finibus ligula in justo
+            euismod, ut pharetra enim ornare. Morbi non varius libero. Nam rutrum tristique libero, sed aliquam metus
+            mattis
+            eget. Duis iaculis eleifend tellus, vel condimentum sapien vulputate at. Quisque imperdiet quam eget semper
+            posuere.</p>
+        <img src="./img/titlePage.webp" alt="appleIcon.png"/>
+    </div>
+    <div id="historySection3">
+        <img src="./img/titlePage.webp" alt="appleIcon.png"/>
+        <p>Nunc id dignissim purus. Nunc leo eros, lobortis ac nunc non, pretium laoreet enim. Vestibulum
+            tincidunt leo non
+            facilisis sagittis. Suspendisse commodo, leo eu cursus interdum, velit dui vestibulum turpis, at maximus
+            urna
+            erat ac neque. Nam vel tristique tellus. In hac habitasse platea dictumst. Phasellus finibus ligula in justo
+            euismod, ut pharetra enim ornare. Morbi non varius libero. Nam rutrum tristique libero, sed aliquam metus
+            mattis
+            eget. Duis iaculis eleifend tellus, vel condimentum sapien vulputate at. Quisque imperdiet quam eget semper
+            posuere.</p>
+    </div>
+    <div id="historySection4">
+        <img src="./img/titlePage.webp" alt="appleIcon.png"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac tempor libero. Morbi luctus
+            lobortis
+            libero,
+            sodales ultricies neque tincidunt id. Nulla facilisi. Curabitur ac magna rutrum, aliquam sem et, elementum
+            magna. Proin id vestibulum lorem. Nulla sodales orci sapien, eu dapibus augue egestas sit amet. Vivamus non
+            eros
+            risus. In elit massa, elementum sed consequat sed, commodo vitae velit.</p>
+    </div>
 </section>
 
 <section id="weapons">
     <h3>Weapons</h3>
-    <section id="weaponsContainer">
+    <div id="weaponsContainer">
         <div>
             <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
             <h6>Title</h6>
@@ -233,7 +255,7 @@
             <h6>Title</h6>
             <p>Lorem ipsum lorem ipsum</p>
         </div>
-    </section>
+    </div>
 </section>
 
 <section id="quotes">
@@ -300,7 +322,7 @@
     <div>
         <p style="font-weight: 900;" class="siteName">Apple of Discord</p>
         <span></span>
-        <p>Project by <a href="./html/aboutUs.html" style="font-weight: 600;">Ji Han Um, Maya Saligumba, and Rozita</a>
+        <p>Project by <a style="font-weight: 600;">Ji Han Um, Maya Saligumba, and Rozita</a>
         </p>
         <span></span>
         <p>Designed and coded by Ji Han Um</p>

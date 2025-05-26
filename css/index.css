@@ -94,13 +94,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1em 15vw;
+  padding: 5rem 20vw;
 }
 
 #about img {
   width: 200px;
   height: 200px;
   margin: 1em;
+  flex-shrink: 0;
 }
 
 #aboutTitle {
@@ -123,12 +124,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem 10vw;
+  padding: 2rem 5vw;
 }
 
 #aboutContainer div {
-  margin: 1em;
-  padding: 1em;
+  margin: 1rem;
+  padding: 2rem;
   background-color: #b3b3b3;
 }
 
@@ -170,6 +171,10 @@
 
 
 
+#appearances {
+  background-color: #b3b3b3;
+  padding: 5rem 20vw;
+}
 
 #appearances h3 {
   text-align: center;
@@ -180,13 +185,16 @@
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-gap: 1rem;
-  margin: 1rem 20vw;
 }
 
 @media screen and (max-width: 1000px) {
   #appearancesContainer {
     grid-template-columns: 50% 50%;
     margin: 1rem 10vw;
+  }
+
+  #appearancesContainer {
+    grid-gap: 0;
   }
 }
 
@@ -238,6 +246,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 #whereFound {
   display: flex; /* Use flexbox for alignment */
   flex-direction: column; /* Stack content vertically */
@@ -246,16 +266,19 @@
   width: 100%; /* Ensure it takes the full width */
   box-sizing: border-box; /* Include padding/borders in height calculation */
   text-align: center; /* Ensure inner text is centered */
-  padding: 1em 25vw; /* Optional padding for spacing */
+  padding: 5rem 20vw; /* Optional padding for spacing */
 }
 
 
-#whereFound div {
-  background: #b3b3b3;
+#whereFound iframe {
   width: 80%;
   height: 300px;
   border-radius: 20px;
   margin: 2em;
+}
+
+#iframe:hover {
+  cursor: none;
 }
 
 #whereFound p {
@@ -270,10 +293,206 @@
 
 
 
-#weapons {
+#species {
+  padding: 5rem 20vw;
+  width: 100%;
+  background-color: #b3b3b3;
+}
+
+
+
+#speciesContainer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 2rem;
+  flex-shrink: 0;
+}
+
+#species h3 {
+  margin: 1rem;
   text-align: center;
 }
 
+#species div h3, #species div p {
+  margin: 1rem;
+}
+
+#speciesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  #speciesContainer {
+    flex-wrap: wrap;
+    margin: 1rem 10vw;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+#history {
+  margin: 5rem 20vw;
+}
+
+#history h3 {
+  text-align: center;
+  margin: 2rem;
+}
+
+#history img {
+  flex-shrink: 0;
+}
+
+#historySection1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#historySection2 img {
+  width: 30vw;
+  height: 200px;
+}
+
+#historySection2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#historySection2 p, #historySection2 img {
+  margin: 2rem 0;
+}
+
+#historySection2 p, #historySection3 img {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+
+
+#historySection3 img {
+  width: 30vw;
+  height: 200px;
+}
+
+#historySection3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#historySection3 p, #historySection3 img {
+  margin: 2rem 0;
+}
+
+#historySection3 p, #historySection2 img {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+
+
+#historySection4 img {
+  width: 100%;
+  height: 200px;
+  margin: 2rem 0;
+}
+
+#historySection4 p {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+/*Adjust this after adding actual text*/
+@media screen and (max-width: 1410px) {
+  #historySection2, #historySection3 {
+    flex-direction: column;
+  }
+
+  #historySection2 p, #historySection3 p {
+    text-align: center;
+    padding: 0;
+  }
+
+  #historySection2 img, #historySection3 img {
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    margin: 2rem 0;
+  }
+}
+
+
+
+
+
+
+#weapons {
+  padding: 5rem 20vw;
+  background-color: #b3b3b3;
+}
+
+#weapons h3 {
+  text-align: center;
+}
+
+#weaponsContainer {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #weaponsContainer {
+    grid-template-columns: 50% 50%;
+    margin: 1rem 10vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #weaponsContainer {
+    grid-template-columns: 100%;
+  }
+}
+
+#weaponsContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*background-color: #ff411c;*/
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+#weaponsContainer div p, #weaponsContainer div h3 {
+  margin: 1rem;
+  text-align: center;
+}
+
+#weaponsContainer div img {
+  margin: 1rem;
+  width: 200px;
+  height: 200px;
+}
 
 
 
@@ -286,7 +505,7 @@
 #quotes {
   justify-content: center;
   text-align: left;
-  padding: 1rem 15vw;
+  padding: 5rem 15vw;
 }
 
 .quote {
@@ -306,6 +525,25 @@
 
 
 
+
+
+
+
+#gallery h3 {
+  text-align: center;
+  margin: 2rem;
+}
+
+#gallery {
+  margin: 5rem 0;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 1000px) {
   #titlePage h1 {
     font-size: 3em;
@@ -318,13 +556,7 @@
   }
 
   #whereFound {
-    padding: 1rem;
-  }
-
-  #weapons {
-    width: 90%; /* Expands section width to 90% of the viewport width */
-    margin: 0 auto; /* Center it */
-    padding: 1em; /* Add breathing space */
+    padding: 1rem 10vw;
   }
 
   #weaponsContainer > div {
@@ -340,7 +572,7 @@
   }
 
   .quote {
-    margin: 1rem auto; /* Center the individual blocks */
+    margin: 4rem auto; /* Center the individual blocks */
     width: 100%; /* Make quotes span the full width of the container */
   }
 }
