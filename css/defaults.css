@@ -1,3 +1,29 @@
+:root {
+  --base-color: #white;
+  --secondary-base-color: #d5d5d5;
+  --header-footer-color: #f2f2f2;
+  --text-color: #000000;
+  --secondary-text-color: #222;
+  --accent-color: #af0000;
+  --secondary-accent-color: rgba(175, 0, 0, 0.35);
+  --selection-color: #e8e8e8;
+}
+
+.darkMode {
+  --base-color: #131313;
+  --secondary-base-color: #1c1c1c;
+  --header-footer-color: #202020;
+  --text-color: #ffffff;
+  --secondary-text-color: #d8d8d8;
+  --accent-color: #880000;
+  --secondary-accent-color: rgba(136, 0, 0, 0.35);
+  --selection-color: #808080;
+}
+
+body {
+  background-color: var(--base-color);
+}
+
 @media screen and (min-width: 1001px) {
   * {
     cursor: none;
@@ -62,41 +88,48 @@ section {
 }
 
 a {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
 }
 
 h1 {
+  color: var(--text-color);
   font-size: 5rem;
   font-weight: 900;
 }
 
 h2 {
+  color: var(--text-color);
   font-size: 3rem;
   font-weight: 800;
 }
 
 h3 {
+  color: var(--text-color);
   font-size: 2rem;
   font-weight: 700;
 }
 
 h4 {
+  color: var(--text-color);
   font-size: 1.75rem;
   font-weight: 600;
 }
 
 h5 {
+  color: var(--text-color);
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 h6 {
+  color: var(--text-color);
   font-size: 1.25rem;
   font-weight: 400;
 }
 
 p {
+  color: var(--text-color);
   font-size: 1rem;
   font-weight: 400;
 }
@@ -108,8 +141,6 @@ p {
 
 
 html {
-  color: #222;
-  font-size: 1em;
   line-height: 1.4;
   scroll-behavior: smooth;
 }
@@ -122,13 +153,13 @@ html {
  */
 
 ::-moz-selection {
-  background: #e8e8e8;
+  background: var(--selection-color);
   margin: 10px;
   text-shadow: rgb(0, 0, 0, 0.5) 5px 5px 10px;
 }
 
 ::selection {
-  background: #e8e8e8;
+  background: var(--selection-color);
   margin: 10px;
   text-shadow: rgb(0, 0, 0, 0.5) 5px 5px 10px;
 }
@@ -141,7 +172,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 5px solid #393939;
+  border-top: 5px solid var(--text-color);
   margin: 3em 45vw;
   padding: 0;
 }

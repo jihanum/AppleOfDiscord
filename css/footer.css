@@ -1,6 +1,6 @@
 #footer {
   display: flex;
-  background: #f2f2f2;
+  background: var(--header-footer-color);
   margin: 0;
   padding: 0 1.25em;
   flex-direction: row;
@@ -31,7 +31,7 @@
 #footer span {
   width: 5px;
   height: 5px;
-  background-color: #000000;
+  background-color: var(--text-color);
   border-radius: 50%;
   margin: 1.25em 0.5em;
 }

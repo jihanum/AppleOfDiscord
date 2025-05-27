@@ -30,9 +30,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
-    <script src="./js/scrollEffects.js"></script>
-    <script src="./js/loadingScreen.js"></script>
-    <script src="./js/hamMenu.js"></script>
+    <script src="./js/scrollEffects.js" defer></script>
+    <script src="./js/loadingScreen.js" defer></script>
+    <script src="./js/hamMenu.js" defer></script>
+    <script src="./js/darkMode.js" defer></script>
 
 </head>
 
@@ -53,11 +54,21 @@
         <p id="headerTitle">Apple of Discord</p>
     </div>
 
+
     <ul id="linksHeader">
-        <li style="background-color: #af0000;"><a href="./index.html" >Home</a></li>
+        <li style="background-color: var(--accent-color);"><a href="./index.html">Home</a></li>
         <li><a href="./html/faq.html">FAQ</a></li>
         <li><a href="./html/references.html">References</a></li>
     </ul>
+
+    <button id="themeSwitch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+        </svg>
+    </button>
 
     <div class="hamMenu">
         <span></span>
@@ -95,17 +106,7 @@
         <img src="./img/titlePage.webp" alt="titlePage.webp"/>
         <div>
             <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip
-                ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                id
-                est
-                laborum.</p>
+            <p>Apple of Discord, is an ancient Greek myth that follows the tale of the golden apple dropped by the Greek goddess of  Discord and strife Eris, at the wedding of Peleus (son of Aecus and king of the island Aegina) and Thetis (a sea nymph and a goddess of the sea) on Mount Pelion. Eris offended that she was the only god uninvited to the wedding dropped the apple evenly distanced among three well known and powerful goddesses Athena, Aphrodite, and Hera and the apple inscribed with the words “To the fairest” eventually led to a vanity-fueled argument among the three goddesses. Zeus God of Thunder (who would usually handle petty disputes) did not want to risk offending any of the goddesses so left the responsibility up to the Trojan prince, Paris to decide who the apple was intended for and therefore the most beautiful. Each of the three goddesses offered Paris a unique gift if he chose one of them. Athena offered unmatched wisdom and skill in war. Hera offered power and domination over all of Asia and lastly Aphrodite offered the most beautiful woman in the world. None other than Helen of Sparta (who was already married to King Menelaus of Sparta). Tempted by Aphrodite's offer, he chose to pursue Helen of Sparta by letting Aphrodite place a love enchantment on her and stealing her from her kingdom, eventually starting the Trojan war. </p>
         </div>
     </div>
     <div id="aboutContainer">
@@ -133,17 +134,17 @@
     <section id="appearancesContainer">
         <div>
             <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-            <h6>Title</h6>
+            <h6>Circe by Madeline miller (book)</h6>
             <p>Lorem ipsum lorem ipsum</p>
         </div>
         <div>
             <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-            <h6>Title</h6>
+            <h6>The Odyssey by homer, translated by Robert Fagles (book)</h6>
             <p>Lorem ipsum lorem ipsum</p>
         </div>
         <div>
             <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-            <h6>Title</h6>
+            <h6>Epic the musical by Jorge Rivera-Herrans</h6>
             <p>Lorem ipsum lorem ipsum</p>
         </div>
         <div>
@@ -166,7 +167,8 @@
 
 <section id="whereFound">
     <h3>Where is it found?</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224136.7660721755!2d22.67367324871297!3d39.656826513735375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a70d07a9815a83%3A0x933c467a77e6dfc9!2sPelion!5e0!3m2!1sen!2sca!4v1748231783274!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224136.7660721755!2d22.67367324871297!3d39.656826513735375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a70d07a9815a83%3A0x933c467a77e6dfc9!2sPelion!5e0!3m2!1sen!2sca!4v1748231783274!5m2!1sen!2sca"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p>The apple of discord is found at Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -178,14 +180,52 @@
 </section>
 
 <section id="species">
-    <h3>Species</h3>
-    <div id="speciesContainer">
+    <h3>Species and Gender</h3>
+    <div class="speciesContainer">
         <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
         <div>
-            <h4>Apple Species 123</h4>
-            <p>Explanation of how exactly this may be the type of species lorem ipsum dolor amet
+            <h4>Eris: Female goddess</h4>
+            <p>The goddess of strife and discord, Eris throws the golden apple at the wedding of Peleus and Thetis.</p>
+        </div>
+    </div>
 
-                aaaaaaaaaaaaaaaaaaaaaaaaaa.</p>
+    <div class="speciesContainer">
+        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+        <div>
+            <h4>Hera: Female goddess</h4>
+            <p>The goddess of marriage, Hera is one of the three goddesses who claim the apple.</p>
+        </div>
+    </div>
+
+    <div class="speciesContainer">
+        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+        <div>
+            <h4>Athena: Female goddess</h4>
+            <p>The goddess of wisdom and warfare, Athena is another of the three goddesses who want the apple.</p>
+        </div>
+    </div>
+
+    <div class="speciesContainer">
+        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+        <div>
+            <h4>Aphrodite: Female goddess</h4>
+            <p>The goddess of love and beauty, Aphrodite is the third goddess who desires the apple and ultimately receives it.</p>
+        </div>
+    </div>
+
+    <div class="speciesContainer">
+        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+        <div>
+            <h4>Paris: male prince</h4>
+            <p>A Trojan prince, Paris is asked to choose which of the three goddesses is the fairest and is given the apple.</p>
+        </div>
+    </div>
+
+    <div class="speciesContainer">
+        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+        <div>
+            <h4>Helen of Sparta: Female mortal</h4>
+            <p>Helen is a human woman, the wife of Menelaus, King of Sparta. She is the central figure in the Trojan War, whose abduction by Paris, a Trojan prince, is the catalyst for the conflict.</p>
         </div>
     </div>
 </section>
@@ -240,8 +280,10 @@
     <div id="weaponsContainer">
         <div>
             <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-            <h6>Title</h6>
-            <p>Lorem ipsum lorem ipsum</p>
+            <h6>The Apple of Discord</h6>
+            <p>Inscribed with the words “To the fairest” was a trick to stir up scandal upon the gods because of Eris’s spite towards the fact that she was the only uninvited god to the wedding. This small act eventually led to the trojan war.
+
+                It is now also a saying for when something small turns catastrophic “Sowing the seeds of discord” </p>
         </div>
 
         <div>

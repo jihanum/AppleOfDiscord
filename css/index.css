@@ -64,7 +64,7 @@
 #titlePage h1 {
   text-align: left;
   margin: 3vh 5vw;
-  color: white;
+  color: #ffffff;
 }
 
 #titlePage h6 {
@@ -74,8 +74,8 @@
 }
 
 #titlePage a {
-  color: #000000;
-  background-color: #bfbfbf;
+  color: var(--text-color);
+  background-color: var(--header-footer-color);
   border-radius: 30px;
   transition: background-color 0.3s ease, font-weight 0.7s ease;
   text-align: center;
@@ -84,7 +84,7 @@
 }
 
 #titlePage a:hover {
-  background-color: #af0000;
+  background-color: var(--accent-color);
   font-weight: 800;
 }
 
@@ -131,7 +131,7 @@
 #aboutContainer div {
   margin: 1rem;
   padding: 2rem;
-  background-color: #b3b3b3;
+  background-color: var(--secondary-base-color);
 }
 
 @media screen and (max-width: 1000px) {
@@ -173,11 +173,11 @@
 
 
 #appearances {
-  background-color: #b3b3b3;
+  background-color: var(--secondary-base-color);
   padding: 5rem 20vw;
 }
 
-#appearances h3 {
+#appearances h3, #appearances h6 {
   text-align: center;
 }
 
@@ -297,12 +297,12 @@
 #species {
   padding: 5rem 20vw;
   width: 100%;
-  background-color: #b3b3b3;
+  background-color: var(--secondary-base-color);
 }
 
 
 
-#speciesContainer img {
+.speciesContainer img {
   width: 150px;
   height: 150px;
   border-radius: 20px;
@@ -316,20 +316,20 @@
 }
 
 #species div h3, #species div p {
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
-#speciesContainer {
+.speciesContainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
 
 
 @media screen and (max-width: 1000px) {
-  #speciesContainer {
+  .speciesContainer {
     flex-wrap: wrap;
     margin: 1rem 10vw;
     text-align: center;
@@ -447,7 +447,7 @@
 
 #weapons {
   padding: 5rem 20vw;
-  background-color: #b3b3b3;
+  background-color: var(--secondary-base-color);
 }
 
 #weapons h3 {
