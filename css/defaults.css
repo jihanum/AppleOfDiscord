@@ -1,8 +1,8 @@
 :root {
-  --base-color: #80ae89;
-  --secondary-base-color: #D99201;
-  --header-footer-color: #f2f2f2;
-  --text-color: #000000;
+  --base-color: #1b2b36;
+  --secondary-base-color: #8e6d35;
+  --header-footer-color: #202020;
+  --text-color: #ffffff;
   --secondary-text-color: #222;
   --accent-color: #dd9c00;
   --secondary-accent-color: rgba(221, 156, 0, 0.5);
@@ -10,7 +10,7 @@
 }
 
 .darkMode {
-  --base-color: #171e19;
+  --base-color: #0b151c;
   --secondary-base-color: #8e6d35;
   --header-footer-color: #202020;
   --text-color: #ffffff;
