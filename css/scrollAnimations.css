@@ -4,6 +4,12 @@ section {
   transition: opacity 0.5s ease, transform 0.5s ease; /* Fast transition */
 }
 
+@media screen and (max-width: 768px) {
+  section {
+    transform: translateY(50px);
+  }
+}
+
 section.show-animation {
   opacity: 1;
   transform: translateY(0);
