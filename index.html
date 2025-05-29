@@ -20,9 +20,9 @@
     <meta property="og:image" content="">
     <meta property="og:image:alt" content="">
 
-    <link rel="icon" href="./img/Icon/IconGolden/appleIconGolden.ico" sizes="any">
-    <link rel="icon" href="./img/Icon/IconGolden/appleIconGolden.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./img/Icon/IconGolden/appleIconGolden.webp">
+    <link rel="icon" href="./img/Icon/appleIcon.ico" sizes="any">
+    <link rel="icon" href="./img/Icon/appleIcon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/Icon/appleIcon.png">
 
     <meta name="theme-color" content="#fafafa">
 
@@ -50,7 +50,9 @@
 <div class="loader"></div>
 <nav id="header" class="sticky">
     <div id="logo">
-        <img src="./img/Icon/IconGolden/appleIconGoldenTextured.webp" alt="appleIcon.webp">
+        <a href="./index.html">
+            <img src="./img/Icon/IconGolden/appleIconGoldenTextured.webp" alt="appleIcon.webp">
+        </a>
         <p id="headerTitle">Apple of Discord</p>
     </div>
 
@@ -63,11 +65,12 @@
 
     <button id="themeSwitch">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-            <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
             <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
         </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+        </svg>
+
     </button>
 
     <div class="hamMenu">
@@ -88,11 +91,11 @@
 <section id="titlePage" class="show-animation">
     <div style="text-align: left;">
         <h1>Apple of Discord</h1>
-        <h6>Ji Han Um, Maya Saligumba, Rozita</h6>
+        <h6>Ji Han Um, Maya Saligumba, Rozita Moradi</h6>
         <h6>Literary Studies 10 Enriched</h6>
     </div>
     <div style="text-align: center;">
-        <a style="padding: 0.75em 1em;" href="#about">
+        <a class="button" style="padding: 0.75em 1em;" href="#about">
             Learn More &rarr;
         </a>
     </div>
@@ -103,28 +106,44 @@
 
 <section id="about">
     <div id="aboutTitle">
-        <img src="./img/titlePage.webp" alt="titlePage.webp"/>
+        <div id="aboutImage"></div>
         <div>
             <h3>About</h3>
-            <p>Apple of Discord, is an ancient Greek myth that follows the tale of the golden apple dropped by the Greek goddess of  Discord and strife Eris, at the wedding of Peleus (son of Aecus and king of the island Aegina) and Thetis (a sea nymph and a goddess of the sea) on Mount Pelion. Eris offended that she was the only god uninvited to the wedding dropped the apple evenly distanced among three well known and powerful goddesses Athena, Aphrodite, and Hera and the apple inscribed with the words “To the fairest” eventually led to a vanity-fueled argument among the three goddesses. Zeus God of Thunder (who would usually handle petty disputes) did not want to risk offending any of the goddesses so left the responsibility up to the Trojan prince, Paris to decide who the apple was intended for and therefore the most beautiful. Each of the three goddesses offered Paris a unique gift if he chose one of them. Athena offered unmatched wisdom and skill in war. Hera offered power and domination over all of Asia and lastly Aphrodite offered the most beautiful woman in the world. None other than Helen of Sparta (who was already married to King Menelaus of Sparta). Tempted by Aphrodite's offer, he chose to pursue Helen of Sparta by letting Aphrodite place a love enchantment on her and stealing her from her kingdom, eventually starting the Trojan war. </p>
+            <p>It all began when all the Greek gods, except Eris (the goddess of discord and strife), were invited to
+                the wedding of the glorious mortal Peleus and the goddess Thetis. Out of revenge and jealousy, Eris
+                threw a golden apple to the crowd with an inscription reading “to the fairest”. Aphrodite Hera and
+                Athena were all in the same crowd. they all looked down on the apple claiming it belonged to them, and
+                so they began deciding who was the most beautiful. They took this decision to the Trojan prince Paris.
+                The three goddesses got undressed in front of Paris and asked him to choose who was the most beautiful
+                and he couldn’t decide so the goddesses resorted in bribing him.</p>
+            <a class="button" style="text-align: left; padding: 0.75em 1em;" href="#history">
+                Learn More &rarr;
+            </a>
         </div>
+
     </div>
     <div id="aboutContainer">
         <div>
-            <h6>Title</h6>
-            <p>Lorem ipsum lorem ipsum</p>
+            <a href="#appearances">
+                <h6>Appearances</h6>
+                <p>Circe, The Odyssey, Epic the Musical, Troy</p>
+            </a>
         </div>
         <div>
-            <h6>Title</h6>
-            <p>Lorem ipsum lorem ipsum</p>
+            <a href="#whereFound">
+                <h6>Where was it found?</h6>
+                <p>Mount Peleus</p>
+            </a>
         </div>
         <div>
-            <h6>Title</h6>
-            <p>Lorem ipsum lorem ipsum</p>
+            <a href="#weapons">
+                <h6>Weapons</h6>
+                <p>Itself</p>
+            </a>
         </div>
         <div>
-            <h6>Title</h6>
-            <p>Lorem ipsum lorem ipsum</p>
+            <h6>Quantity</h6>
+            <p>1</p>
         </div>
     </div>
 </section>
@@ -133,26 +152,22 @@
     <h3>Appearances</h3>
     <section id="appearancesContainer">
         <div>
-            <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+            <div class="appearanceImage" id="appearanceImage1"></div>
             <h6>Circe by Madeline miller (book)</h6>
-            <p>Lorem ipsum lorem ipsum</p>
         </div>
         <div>
-            <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+            <div class="appearanceImage" id="appearanceImage2"></div>
             <h6>The Odyssey by homer, translated by Robert Fagles (book)</h6>
-            <p>Lorem ipsum lorem ipsum</p>
         </div>
         <div>
-            <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+            <div class="appearanceImage" id="appearanceImage3"></div>
             <h6>Epic the musical by Jorge Rivera-Herrans</h6>
-            <p>Lorem ipsum lorem ipsum</p>
         </div>
         <div>
-            <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+            <div class="appearanceImage" id="appearanceImage4"></div>
             <h6>Troy - The Movie</h6>
-            <p>Paris, Menelaus, Helen, Agamemnon</p>
         </div>
-        
+
     </section>
 </section>
 
@@ -160,109 +175,118 @@
     <h3>Where is it found?</h3>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224136.7660721755!2d22.67367324871297!3d39.656826513735375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a70d07a9815a83%3A0x933c467a77e6dfc9!2sPelion!5e0!3m2!1sen!2sca!4v1748231783274!5m2!1sen!2sca"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p>The apple of discord is found at Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-        sunt in
-        culpa qui officia deserunt mollit
-        anim id est laborum.</p>
+    <p>The Apple of Discord has been thrown by Eris at Mount Pelion in Ancient Greece, and this triggered a war that
+        occurred in Troy, which is situated in modern-day Turkey.</p>
 </section>
 
 <section id="species">
     <h3>Species and Gender</h3>
-    <div class="speciesContainer">
-        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-        <div>
-            <h4>Eris: Female goddess</h4>
-            <p>The goddess of strife and discord, Eris throws the golden apple at the wedding of Peleus and Thetis.</p>
+    <nav id="speciesContainer">
+        <div class="speciesContainer">
+            <div class="speciesImage" id="speciesImage1"></div>
+            <div>
+                <h4>Eris: Female Goddess</h4>
+                <p>The goddess of strife and discord. Eris throws the golden apple at the wedding of Peleus and
+                    Thetis.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="speciesContainer">
-        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-        <div>
-            <h4>Hera: Female goddess</h4>
-            <p>The goddess of marriage, Hera is one of the three goddesses who claim the apple.</p>
+        <div class="speciesContainer">
+            <div class="speciesImage" id="speciesImage2"></div>
+            <div>
+                <h4>Hera: Female Goddess</h4>
+                <p>The goddess of marriage. Hera is one of the three goddesses who claim the apple. She is known for
+                    being a tall, striking woman with big full eyes.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="speciesContainer">
-        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-        <div>
-            <h4>Athena: Female goddess</h4>
-            <p>The goddess of wisdom and warfare, Athena is another of the three goddesses who want the apple.</p>
+        <div class="speciesContainer">
+            <div class="speciesImage" id="speciesImage3"></div>
+            <div>
+                <h4>Athena: Female Goddess</h4>
+                <p>The goddess of wisdom and warfare. Athena is another of the three goddesses who want the apple. She
+                    is a majestic figure with full lips and grey eyes.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="speciesContainer">
-        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-        <div>
-            <h4>Aphrodite: Female goddess</h4>
-            <p>The goddess of love and beauty, Aphrodite is the third goddess who desires the apple and ultimately receives it.</p>
+        <div class="speciesContainer">
+            <div class="speciesImage" id="speciesImage4"></div>
+            <div>
+                <h4>Aphrodite: Female Goddess</h4>
+                <p>The goddess of love and beauty. Aphrodite is the third goddess who desires the apple and ultimately
+                    receives it. She is the most beautiful woman ever seen, with long blonde hair, blue eyes, and
+                    feminine curves.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="speciesContainer">
-        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-        <div>
-            <h4>Paris: male prince</h4>
-            <p>A Trojan prince, Paris is asked to choose which of the three goddesses is the fairest and is given the apple.</p>
+        <div class="speciesContainer">
+            <div class="speciesImage" id="speciesImage5"></div>
+            <div>
+                <h4>Paris: Male Prince (Mortal human)</h4>
+                <p>A Trojan prince, Paris is asked to choose which of the three goddesses is the fairest and is given
+                    the apple. He is portrayed as a handsome and attractive men in painting representations.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="speciesContainer">
-        <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
+        <div class="speciesContainer">
+            <div class="speciesImage" id="speciesImage6"></div>
+            <div>
+                <h4>Helen of Sparta: Female Mortal</h4>
+                <p>Helen is a human woman, the wife of Menelaus, King of Sparta. She is the central figure in the Trojan
+                    War, whose abduction by Paris, a Trojan prince, is the catalyst for the conflict. She is the most
+                    beautiful mortal during the time.</p>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section id="dimensions">
+    <h3>Dimensions</h3>
+    <div id="dimensionsContainer">
         <div>
-            <h4>Helen of Sparta: Female mortal</h4>
-            <p>Helen is a human woman, the wife of Menelaus, King of Sparta. She is the central figure in the Trojan War, whose abduction by Paris, a Trojan prince, is the catalyst for the conflict.</p>
+            <h6>Eris, Hera, Athena, & Aphrodite</h6>
+            <p>God's dimensions cannot be expressed appreciably in a three-dimensional world.</p>
+        </div>
+        <div>
+            <h6>Paris</h6>
+            <p>His height is not stated in the myth, though he is known for being strong and tall.</p>
         </div>
     </div>
 </section>
 
-<!--Add text and check media screen conditions of history-->
+
 <section id="history">
     <h3>The History</h3>
-    <p id="historySection1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac tempor libero. Morbi luctus
-        lobortis
-        libero,
-        sodales ultricies neque tincidunt id. Nulla facilisi. Curabitur ac magna rutrum, aliquam sem et, elementum
-        magna. Proin id vestibulum lorem. Nulla sodales orci sapien, eu dapibus augue egestas sit amet. Vivamus non eros
-        risus. In elit massa, elementum sed consequat sed, commodo vitae velit.</p>
+    <p id="historySection1">The Apple of Discord is an ancient Greek myth that follows the tale of the golden apple that
+        was dropped by Eris, Greek goddess of Discord and Strife. The apple was dropped during the wedding of Peleus
+        (son of Aeacus and king of Aegina), and Thetis (a sea nymph and a goddess of the sea). Eris, who was offended
+        for being the only uninvited god in the joyous event, vindictively dropped the apple among three powerful
+        goddesses: Athena, Aphrodite, and Hera.</p>
     <div id="historySection2">
-        <p>Nunc id dignissim purus. Nunc leo eros, lobortis ac nunc non, pretium laoreet enim. Vestibulum tincidunt leo
-            non
-            facilisis sagittis. Suspendisse commodo, leo eu cursus interdum, velit dui vestibulum turpis, at maximus
-            urna
-            erat ac neque. Nam vel tristique tellus. In hac habitasse platea dictumst. Phasellus finibus ligula in justo
-            euismod, ut pharetra enim ornare. Morbi non varius libero. Nam rutrum tristique libero, sed aliquam metus
-            mattis
-            eget. Duis iaculis eleifend tellus, vel condimentum sapien vulputate at. Quisque imperdiet quam eget semper
-            posuere.</p>
-        <img src="./img/titlePage.webp" alt="appleIcon.png"/>
+        <p>The apple was inscribed with the words “To the fairest”, which eventually led to a vanity-fueled argument
+            among the three goddesses. Zeus, God of Thunder (who would usually handle petty disputes), did not want to
+            risk offending any of the goddesses so he left the responsibility to the Trojan prince, Paris, to provide
+            the apple to the worthiest goddess. Each of the three goddesses offered Paris a unique gift if he chose one
+            of them.</p>
+        <div class="historyImage" id="historyImage1"></div>
     </div>
     <div id="historySection3">
-        <img src="./img/titlePage.webp" alt="appleIcon.png"/>
-        <p>Nunc id dignissim purus. Nunc leo eros, lobortis ac nunc non, pretium laoreet enim. Vestibulum
-            tincidunt leo non
-            facilisis sagittis. Suspendisse commodo, leo eu cursus interdum, velit dui vestibulum turpis, at maximus
-            urna
-            erat ac neque. Nam vel tristique tellus. In hac habitasse platea dictumst. Phasellus finibus ligula in justo
-            euismod, ut pharetra enim ornare. Morbi non varius libero. Nam rutrum tristique libero, sed aliquam metus
-            mattis
-            eget. Duis iaculis eleifend tellus, vel condimentum sapien vulputate at. Quisque imperdiet quam eget semper
-            posuere.</p>
+        <div class="historyImage" id="historyImage2"></div>
+        <p>Goddess Athena offered unmatched wisdom and skill in war. Alongside her, Hera offered power and domination
+            over all of Asia. Lastly, Aphrodite offered the most beautiful woman in the world, who was none other
+            than Helen of Sparta (who, at the time, was already married to King Menelaus of Sparta). Tempted by
+            Aphrodite's offer, Paris ultimately accepted Aphrodite’s offer and pursued Helen of Sparta,
+            allowing Aphrodite to steal Helen and enchant her with love for him, which eventually started the Trojan
+            war.</p>
     </div>
     <div id="historySection4">
-        <img src="./img/titlePage.webp" alt="appleIcon.png"/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac tempor libero. Morbi luctus
-            lobortis
-            libero,
-            sodales ultricies neque tincidunt id. Nulla facilisi. Curabitur ac magna rutrum, aliquam sem et, elementum
-            magna. Proin id vestibulum lorem. Nulla sodales orci sapien, eu dapibus augue egestas sit amet. Vivamus non
-            eros
-            risus. In elit massa, elementum sed consequat sed, commodo vitae velit.</p>
+        <div class="historyImage" id="historyImage3"></div>
+        <p>The war between the Trojans and the Achaeans lasted 10 years, all due to the dispute of who claimed Helen.
+            Eventually, the war came to an end in the Achaeans' favor, and as a result, Helen was given back to
+            Menelaus. Regardless, despite how much he loved Helen in the past, he was intending to kill her as soon as
+            she was returned. However, as Helen was kneeling for Menelaus' mercy, he eventually softened up and offered
+            to spare her life if she killed her two perfect children that she had with Paris. To which she hastily
+            agrees.</p>
     </div>
 </section>
 
@@ -272,77 +296,62 @@
         <div>
             <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
             <h6>The Apple of Discord</h6>
-            <p>Inscribed with the words “To the fairest” was a trick to stir up scandal upon the gods because of Eris’s spite towards the fact that she was the only uninvited god to the wedding. This small act eventually led to the trojan war.
-
-                It is now also a saying for when something small turns catastrophic “Sowing the seeds of discord” </p>
-        </div>
-
-        <div>
-            <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-            <h6>Title</h6>
-            <p>Lorem ipsum lorem ipsum</p>
-        </div>
-
-        <div>
-            <img src="./img/Icon/appleIcon.png" alt="appleIcon.png"/>
-            <h6>Title</h6>
-            <p>Lorem ipsum lorem ipsum</p>
+            <p>Inscribed with the words “To the Fairest” was a petty trick to stir up scandal upon the gods, caused by
+                Eris’s spite towards the fact that she was the only uninvited god to the wedding. This small act
+                eventually led
+                to the Trojan War. Now, it is also a saying for when something small turns catastrophic, as in “sowing
+                the seeds
+                of discord”.</p>
         </div>
     </div>
 </section>
 
 <section id="quotes">
-    <div class="quote">
-        <h4>“To the fairest”</h4>
-        <h6>Apple of Discord</h6>
-        <p>Eris throws the apple in an even distance between the three goddesses, provoking a dispute of vanity.</p>
-    </div>
-    
-    <div class="quote">
+    <nav id="quoteContainer">
+        <div class="quote">
+            <h4>“To the Fairest”</h4>
+            <h6>Apple of Discord</h6>
+            <p>Eris throws the apple in an even distance between the three goddesses, provoking a dispute of vanity.</p>
+        </div>
 
-        <h4>"I want her back so I can kill her with my own two hands"</h4>
-        <h6>Menelaus, (Helen's first husband in sparta speaking to his brother) - Movie of Troy</h6>
-        <p>This highlights the true intentions of King Menelaus towards his unfaithful wife, Helen.</p>
-    </div>
+        <div class="quote">
+            <h4>"I want her back so I can kill her with my own two hands"</h4>
+            <h6>Menelaus (Helen's first husband in Sparta), to his brother - Movie of Troy</h6>
+            <p>This highlights the true intentions of King Menelaus towards his unfaithful wife, Helen.</p>
+        </div>
 
-    <div class="quote">
-        <h4>"They say your mother is an immortal goddess"</h4>
-        <h6>Boy - Movie of Troy</h6>
-        <p>The quote refers to the boy speaking to Achilles of his mother Thetis, goddess/nymph of the sea.</p>
-    </div>
+        <div class="quote">
+            <h4>"They say your mother is an immortal goddess"</h4>
+            <h6>Boy - Movie of Troy</h6>
+            <p>The quote refers to the boy speaking to Achilles of his mother Thetis, goddess/nymph of the sea.</p>
+        </div>
 
-    <div class="quote">
+        <div class="quote">
 
-        <h4>Priam: "Who are you, son?" Achilles: "Son of Peleus"</h4>
-        <h6>Movie of Troy</h6>
-        <p>The significance of this quote is the meeting of the Spartans and the Trojans that would eventually lead to the attack on Troy (The Trojan War) This relates to the apple of discord because Priam, is the father of Paris who stole Helen from Sparta.</p>
-    </div>
+            <h4>[Priam] "Who are you, son?" | [Achilles] "Son of Peleus"</h4>
+            <h6>Movie of Troy</h6>
+            <p>The significance of this quote is the meeting of the Spartans and the Trojans that would eventually lead
+                to
+                the attack on Troy (The Trojan War) This relates to the apple of discord because Priam, is the father of
+                Paris who stole Helen from Sparta.</p>
+        </div>
 
+
+    </nav>
     <div class="quote">
 
         <h4>"I will always love you"</h4>
         <h6>Paris (towards Helen of Sparta) - Movie of Troy</h6>
-        <p>The significance of this quote is Paris professing his love towards Helen, even though their relationship is forbidden and would lead to the Trojan War.</p>
+        <p>The significance of this quote is Paris professing his love towards Helen, even though their relationship
+            is
+            forbidden and would lead to the Trojan War.</p>
     </div>
 
 </section>
 
 <section id="gallery">
     <h3>Gallery</h3>
-    <div id="galleryContainer">
-        <img src="./img/gallery/1.webp" alt="1.webp"/>
-        <img src="./img/gallery/2.webp" alt="2.webp"/>
-        <img src="./img/gallery/3.webp" alt="3.webp"/>
-        <img src="./img/gallery/4.webp" alt="4.webp"/>
-        <img src="./img/gallery/5.webp" alt="5.webp"/>
-        <img src="./img/gallery/6.webp" alt="6.webp"/>
-        <img src="./img/gallery/7.webp" alt="7.webp"/>
-        <img src="./img/gallery/8.webp" alt="8.webp"/>
-        <img src="./img/gallery/9.webp" alt="9.webp"/>
-        <img src="./img/gallery/10.webp" alt="10.webp"/>
-        <img src="./img/gallery/11.webp" alt="11.webp"/>
-        <img src="./img/gallery/12.webp" alt="12.webp"/>
-    </div>
+    <img src="./img/gallery/Gallery.webp" alt="Gallery.webp"/>
 </section>
 
 
@@ -351,7 +360,7 @@
     <div>
         <p style="font-weight: 900;" class="siteName">Apple of Discord</p>
         <span></span>
-        <p>Project by <a style="font-weight: 600;">Ji Han Um, Maya Saligumba, and Rozita</a>
+        <p>Project by <a style="font-weight: 600;">Ji Han Um, Maya Saligumba, and Rozita Moradi</a>
         </p>
         <span></span>
         <p>Designed and coded by Ji Han Um</p>
@@ -361,8 +370,7 @@
 
     </div>
     <p id="bigClassName" style="font-weight: 600; margin-left: auto; font-size: 1.25em;">Literary Studies 10 Enriched
-        (Ms.
-        Moreno)</p>
+        (Ms. Moreno)</p>
     <p id="smallClassName" style="font-weight: 600; margin-bottom: 2em;">Lit. Studies 10E (Ms. Moreno)</p>
 </section>
 

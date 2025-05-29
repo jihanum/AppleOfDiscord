@@ -1,23 +1,27 @@
 :root {
-  --base-color: #1b2b36;
+  --base-color: #0b151c;
   --secondary-base-color: #8e6d35;
-  --header-footer-color: #202020;
+  --header-footer-color: #212121;
   --text-color: #ffffff;
-  --secondary-text-color: #222;
+  --secondary-text-color: #d8d8d8;
   --accent-color: #dd9c00;
   --secondary-accent-color: rgba(221, 156, 0, 0.5);
   --selection-color: #e8e8e8;
 }
 
 .darkMode {
-  --base-color: #0b151c;
-  --secondary-base-color: #8e6d35;
-  --header-footer-color: #202020;
-  --text-color: #ffffff;
+  --base-color: #000000;
+  --secondary-base-color: #191919;
+  --header-footer-color: #151515;
+  --text-color: #cacaca;
   --secondary-text-color: #d8d8d8;
-  --accent-color: #dd9c00;
-  --secondary-accent-color: rgba(221, 156, 0, 0.5);
-  --selection-color: #808080;
+  --accent-color: #5c3f00;
+  --secondary-accent-color: rgba(58, 42, 0, 0.5);
+  --selection-color: #e8e8e8;
+}
+
+* {
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body {
@@ -50,7 +54,7 @@ section {
   width: 30px;
   height: 30px;
 
-  background-color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
   opacity: 0.75;
   border-radius: 50%;
   transition-duration: 150ms;

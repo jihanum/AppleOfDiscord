@@ -13,575 +13,659 @@
 
 
 .loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000; /* Ensure the loader is on top of everything */
-  width: 100vw;
-  height: 100vh;
-  display: flex; /* Center content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background-color: #000000; /* Loader background color */
-  transition: opacity 0.7s, visibility 0.7s;
-  transition-delay: 0.2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the loader is on top of everything */
+    width: 100vw;
+    height: 100vh;
+    display: flex; /* Center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #000000; /* Loader background color */
+    transition: opacity 0.7s, visibility 0.7s;
+    transition-delay: 0.2s;
 }
 
 
 .loader-hidden {
-  opacity: 0;
-  visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
 
 @keyframes sizeIn {
-  from {
-    background-size: 135vw;
-  }
+    from {
+        background-size: 135vw;
+    }
 
-  to {
-    background-size: 100vw;
-  }
+    to {
+        background-size: 100vw;
+    }
 }
 
 #titlePage {
-  animation: sizeIn 1.25s ease;
-  animation-delay: 0.25s;
-  background-image: url("../img/titlePage2.webp");
-  background-position: center bottom; /* Start at the top */
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-attachment: scroll;
-  padding-bottom: 6vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 90vh;
-  box-sizing: border-box;
+    animation: sizeIn 1.25s ease;
+    animation-delay: 0.25s;
+    background-image: url("../img/titlePage2.webp");
+    background-position: center bottom; /* Start at the top */
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-attachment: scroll;
+    padding-bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90vh;
+    box-sizing: border-box;
 }
 
 
 @media screen and (max-width: 1000px) {
-  #titlePage {
-    height: 80vh;
-  }
+    #titlePage {
+        height: 80vh;
+    }
 }
 
 
 #titlePage h1 {
-  text-align: left;
-  margin: 3vh 5vw;
-  color: #ffffff;
+    text-align: left;
+    margin: 3vh 5vw;
+    color: #ffffff;
 }
 
 #titlePage h6 {
-  text-align: left;
-  margin: 1em 5vw;
-  color: #ffffff;
+    text-align: left;
+    margin: 1em 5vw;
+    color: #ffffff;
 }
 
-#titlePage a {
-  color: var(--text-color);
-  background-color: var(--header-footer-color);
-  border-radius: 30px;
-  transition: background-color 0.3s ease, font-weight 0.7s ease;
-  text-align: center;
-  display: inline-block;
-  margin: 10px;
+.button {
+    color: var(--text-color);
+    background-color: var(--header-footer-color);
+    border-radius: 30px;
+    transition: background-color 0.3s ease, font-weight 0.7s ease;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
 }
 
-#titlePage a:hover {
-  background-color: var(--accent-color);
-  font-weight: 800;
+.button:hover {
+    background-color: var(--accent-color);
+    font-weight: 800;
 }
 
 
 #about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 5rem 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 15vw;
 }
 
-#about img {
-  width: 200px;
-  height: 200px;
-  margin: 1em;
-  flex-shrink: 0;
+#aboutImage {
+    background-color: var(--secondary-base-color);
+    background: url("../img/gallery/1.webp") no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    margin: 1rem;
+    flex-shrink: 0;
 }
 
 #aboutTitle {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 #aboutTitle p, #aboutTitle h3 {
-  margin: 1rem 0;
-  text-align: left;
+    margin: 1rem 0;
+    text-align: left;
 }
 
 #aboutTitle div {
-  margin: 0 5rem;
+    margin: 1rem 3rem;
+}
+
+#aboutTitle .button {
+    text-align: left;
+    margin: 1rem 0;
+    display: inline-block;
 }
 
 #aboutContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 5vw;
 }
 
 #aboutContainer div {
-  margin: 1rem;
-  padding: 2rem;
-  background-color: var(--secondary-base-color);
+    margin: 1rem;
+    padding: 2rem;
+    background-color: var(--secondary-base-color);
+    border-radius: 20px;
+    transition: transform 0.1s ease-in;
+}
+
+#aboutContainer div:hover {
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1000px) {
-  #about {
-    padding: 1rem;
-  }
+    #about {
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width: 622px) {
-  #aboutContainer {
-    flex-wrap: wrap;
-    padding: 1rem 0;
-  }
+    #aboutContainer {
+        flex-wrap: wrap;
+        padding: 1rem 0;
+    }
 
-  #aboutContainer div {
-    width: 40%;
-  }
+    #aboutContainer div {
+        width: 40%;
+    }
 }
 
-@media screen and (max-width: 1000px) {
-  #aboutTitle {
-    display: block;
-  }
+@media screen and (max-width: 1622px) {
+    #aboutTitle {
+        display: block;
+    }
 
-  #aboutTitle h3, #aboutTitle p {
-    text-align: center;
-  }
+    #aboutImage {
+        width: 80vw;
+    }
 
-  #aboutTitle div {
-    margin: 7vw;
-  }
+    #aboutTitle h3, #aboutTitle p {
+        text-align: center;
+    }
+
+    #aboutTitle div {
+        margin: 0;
+    }
 }
-
-
-
-
-
-
 
 
 #appearances {
-  background-color: var(--secondary-base-color);
-  padding: 5rem 20vw;
+    background-color: var(--secondary-base-color);
+    padding: 5rem 10vw;
+    transition: background-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.appearanceImage {
+    background-color: var(--base-color);
+    border-radius: 20px;
+    margin: 1rem;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.appearanceImage:hover {
+    transform: scale(1.05);
+}
+
+#appearanceImage1 {
+    background: url("../img/circe.webp") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+#appearanceImage2 {
+    background: url("../img/odyssey.webp") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+#appearanceImage3 {
+    background: url("../img/epic.webp") no-repeat center center;
+    height: 300px;
+    background-size: cover;
+}
+
+#appearanceImage4 {
+    background: url("../img/troy.webp") no-repeat center center;
+    background-size: cover;
+    height: 300px;
 }
 
 #appearances h3, #appearances h6 {
-  text-align: center;
+    text-align: center;
+    margin: 2rem;
 }
 
 #appearancesContainer {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-gap: 1rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 2rem;
+    align-items: start;
+    margin: 2rem 0;
 }
 
-@media screen and (max-width: 1000px) {
-  #appearancesContainer {
-    grid-template-columns: 50% 50%;
-    margin: 1rem 10vw;
-  }
 
-  #appearancesContainer {
-    grid-gap: 0;
-  }
+@media screen and (max-width: 1000px) {
+    #appearancesContainer {
+        grid-template-columns: 50% 50%;
+        margin: 1rem 10vw;
+    }
+
+    #appearancesContainer {
+        grid-gap: 0;
+    }
 }
 
 @media screen and (max-width: 540px) {
-  #appearancesContainer {
-    grid-template-columns: 100%;
-  }
+    #appearancesContainer {
+        grid-template-columns: 100%;
+    }
 }
 
-#appearancesContainer div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /*background-color: #ff411c;*/
-  border-radius: 20px;
-  padding: 1rem;
+#appearancesContainer div:not(.appearanceImage) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ff411c;*/
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 #appearancesContainer div p, #appearancesContainer div h3 {
-  margin: 1rem;
-  text-align: center;
+    margin: 1rem;
+    text-align: center;
 }
 
-#appearancesContainer div img {
-  margin: 1rem;
-  width: 200px;
-  height: 200px;
+.appearanceImage {
+    margin: 1rem;
+    width: 200px;
+    height: 200px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #whereFound {
-  display: flex; /* Use flexbox for alignment */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  width: 100%; /* Ensure it takes the full width */
-  box-sizing: border-box; /* Include padding/borders in height calculation */
-  text-align: center; /* Ensure inner text is centered */
-  padding: 5rem 20vw; /* Optional padding for spacing */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    width: 100%; /* Ensure it takes the full width */
+    box-sizing: border-box; /* Include padding/borders in height calculation */
+    text-align: center; /* Ensure inner text is centered */
+    padding: 5rem 20vw; /* Optional padding for spacing */
 }
 
 
 #whereFound iframe {
-  width: 80%;
-  height: 300px;
-  border-radius: 20px;
-  margin: 2em;
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    margin: 2em;
 }
 
 #iframe:hover {
-  cursor: none;
+    cursor: none;
 }
 
 #whereFound p {
-  margin: 1em;
+    margin: 1em;
 }
-
-
-
-
-
-
-
 
 
 #species {
-  padding: 5rem 20vw;
-  width: 100%;
-  background-color: var(--secondary-base-color);
+    padding: 5rem 20vw;
+    width: 100%;
+    background-color: var(--secondary-base-color);
+    transition: background-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 
+.speciesImage {
+    width: 150px;
+    height: 150px;
+    background-color: var(--base-color);
+    border-radius: 20px;
+    margin: 2rem;
+    flex-shrink: 0;
+}
 
-.speciesContainer img {
-  width: 150px;
-  height: 150px;
-  border-radius: 20px;
-  margin: 2rem;
-  flex-shrink: 0;
+#speciesImage1 {
+    background: url("../img/species/eris.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+#speciesImage2 {
+    background: url("../img/species/hera.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+#speciesImage3 {
+    background: url("../img/species/athena.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+#speciesImage4 {
+    background: url("../img/species/aphrodite.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+#speciesImage5 {
+    background: url("../img/species/paris.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#speciesImage6 {
+    background: url("../img/gallery/8.webp") no-repeat center top;
+    background-size: cover;
 }
 
 #species h3 {
-  margin: 1rem;
-  text-align: center;
+    margin: 1rem;
+    text-align: center;
 }
 
 #species div h3, #species div p {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .speciesContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+}
+
+#speciesContainer {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1rem;
+    align-items: start;
+    margin: 2rem 0;
 }
 
 
 @media screen and (max-width: 1000px) {
-  .speciesContainer {
-    flex-wrap: wrap;
-    margin: 1rem 10vw;
-    justify-content: center;
-    text-align: center;
-  }
+    .speciesContainer {
+        flex-wrap: wrap;
+        margin: 1rem 10vw;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    #speciesContainer {
+        grid-template-columns: 100%;
+    }
 }
 
 
+#dimensions {
+    padding: 5rem 20vw;
+    background-color: var(--secondary-base-color);
+    transition: background-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    text-align: center;
+}
 
+#dimensions h3 {
+    text-align: center;
+    margin: 2rem;
+}
 
+#dimensionsContainer {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1rem;
+    align-items: center;
+    margin: 2rem 0;
+}
 
-
-
-
+#dimensionsContainer div {
+    padding: 2rem;
+    background-color: var(--base-color);
+    border-radius: 20px;
+}
 
 
 #history {
-  margin: 5rem 20vw;
+    margin: 5rem 20vw;
 }
 
 #history h3 {
-  text-align: center;
-  margin: 2rem;
+    text-align: center;
+    margin: 2rem;
 }
 
-#history img {
-  flex-shrink: 0;
+.historyImage {
+    flex-shrink: 0;
 }
 
 #historySection1 {
-  text-align: center;
-  margin: 1rem 0;
+    text-align: center;
+    margin: 1rem 0;
 }
 
-#historySection2 img {
-  width: 30vw;
-  height: 200px;
+#historyImage1 {
+    width: 30vw;
+    height: 200px;
+    background: url("../img/gallery/7.webp") no-repeat center top;
+    background-size: cover;
 }
 
 #historySection2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-#historySection2 p, #historySection2 img {
-  margin: 2rem 0;
+#historySection2 p, #historyImage1 {
+    margin: 2rem 0;
 }
 
-#historySection2 p, #historySection3 img {
-  text-align: right;
-  padding-right: 2rem;
+#historySection2 p, #historyImage2 {
+    text-align: right;
+    padding-right: 2rem;
 }
 
 
-
-#historySection3 img {
-  width: 30vw;
-  height: 200px;
+#historyImage2 {
+    width: 30vw;
+    height: 200px;
+    background: url("../img/gallery/14.webp") no-repeat center center;
+    background-size: cover;
 }
 
 #historySection3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-#historySection3 p, #historySection3 img {
-  margin: 2rem 0;
+#historySection3 p, #historyImage2 {
+    margin: 2rem 0;
 }
 
-#historySection3 p, #historySection2 img {
-  text-align: left;
-  padding-left: 2rem;
+#historySection3 p, #historyImage1 {
+    text-align: left;
+    padding-left: 2rem;
 }
 
 
-
-#historySection4 img {
-  width: 100%;
-  height: 200px;
-  margin: 2rem 0;
+#historyImage3 {
+    width: 100%;
+    height: 450px;
+    margin: 2rem 0;
+    background: url("../img/gallery/4.webp") no-repeat center center;
+    background-size: cover;
 }
 
 #historySection4 p {
-  text-align: center;
-  margin: 2rem 0;
+    text-align: center;
+    margin: 2rem 0;
 }
 
 
 /*Adjust this after adding actual text*/
 @media screen and (max-width: 1410px) {
-  #historySection2, #historySection3 {
-    flex-direction: column;
-  }
+    #historySection2, #historySection3 {
+        flex-direction: column;
+    }
 
-  #historySection2 p, #historySection3 p {
-    text-align: center;
-    padding: 0;
-  }
+    #historySection2 p, #historySection3 p {
+        text-align: center;
+        padding: 0;
+    }
 
-  #historySection2 img, #historySection3 img {
-    width: 100%;
-    height: 200px;
-    padding: 0;
-    margin: 2rem 0;
-  }
+    #historyImage1, #historyImage2 {
+        width: 100%;
+        height: 200px;
+        padding: 0;
+        margin: 2rem 0;
+    }
 }
-
-
-
-
 
 
 #weapons {
-  padding: 5rem 20vw;
-  background-color: var(--secondary-base-color);
+    padding: 5rem 20vw;
+    background-color: var(--secondary-base-color);
+    transition: background-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 #weapons h3 {
-  text-align: center;
+    text-align: center;
 }
 
 #weaponsContainer {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-gap: 1rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-gap: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
-  #weaponsContainer {
-    grid-template-columns: 50% 50%;
-    margin: 1rem 10vw;
-  }
+    #weaponsContainer {
+        grid-template-columns: 50%;
+        margin: 1rem 10vw;
+    }
 }
 
 @media screen and (max-width: 540px) {
-  #weaponsContainer {
-    grid-template-columns: 100%;
-  }
+    #weaponsContainer {
+        grid-template-columns: 100%;
+    }
 }
 
 #weaponsContainer div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /*background-color: #ff411c;*/
-  border-radius: 20px;
-  padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ff411c;*/
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 #weaponsContainer div p, #weaponsContainer div h3 {
-  margin: 1rem;
-  text-align: center;
+    margin: 1rem;
+    text-align: center;
 }
 
 #weaponsContainer div img {
-  margin: 1rem;
-  width: 200px;
-  height: 200px;
+    margin: 1rem;
+    width: 200px;
+    height: 200px;
 }
-
-
-
-
-
-
-
 
 
 #quotes {
-  justify-content: center;
-  text-align: left;
-  padding: 5rem 15vw;
+    justify-content: center;
+    text-align: left;
+    padding: 5rem 15vw;
+}
+
+#quoteContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2rem;
 }
 
 .quote {
-  margin: 2rem 2rem 4rem;
+    margin: 2rem 2rem 4rem;
 }
 
 .quote h6, .quote p {
-  padding: 0 2rem;
+    padding: 0 2rem;
 }
 
 
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 1600px) {
+    #quoteContainer {
+        grid-template-columns: 100%;
+    }
+}
 
 
 #gallery h3 {
-  text-align: center;
-  margin: 2rem;
+    text-align: center;
+    margin: 2rem;
 }
 
 #gallery {
-  margin: 5rem 0;
+    margin: 5rem 0;
 }
-
-
-
-
-
 
 
 @media screen and (max-width: 1000px) {
-  #titlePage h1 {
-    font-size: 3em;
-    text-align: center;
-  }
+    #titlePage h1 {
+        font-size: 3em;
+        text-align: center;
+    }
 
-  #titlePage h6 {
-    font-size: 1em;
-    text-align: center;
-  }
+    #titlePage h6 {
+        font-size: 1em;
+        text-align: center;
+    }
 
-  #whereFound {
-    padding: 1rem 10vw;
-  }
+    #whereFound {
+        padding: 1rem 10vw;
+    }
 
-  #weaponsContainer > div {
-    width: 100%; /* Each weapon container spans full available width */
-    margin-bottom: 1em; /* Add spacing between them */
-  }
+    #weaponsContainer > div {
+        width: 100%; /* Each weapon container spans full available width */
+        margin-bottom: 1em; /* Add spacing between them */
+    }
 
-  /* Improve the width of #quotes */
-  #quotes {
-    width: 90%; /* Wider quotes section for mobile */
-    margin: 0 auto; /* Center horizontally */
-    padding: 1em; /* Add slight padding */
-  }
+    /* Improve the width of #quotes */
+    #quotes {
+        width: 90%; /* Wider quotes section for mobile */
+        margin: 0 auto; /* Center horizontally */
+        padding: 1em; /* Add slight padding */
+    }
 
-  .quote {
-    margin: 4rem auto; /* Center the individual blocks */
-    width: 100%; /* Make quotes span the full width of the container */
-  }
+    .quote {
+        margin: 4rem auto; /* Center the individual blocks */
+        width: 100%; /* Make quotes span the full width of the container */
+    }
 }
 
+#gallery img {
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    #gallery img {
+        width: 100%;
+    }
+}

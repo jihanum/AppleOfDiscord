@@ -1,0 +1,51 @@
+h2 {
+    text-align: center;
+    margin: 5rem 0 2rem 0;
+}
+
+#wrapper {
+    max-width: 75%;
+    margin: 5rem auto;
+    border: 1px solid var(--text-color);
+}
+
+.wrapper > p,
+.wrapper > h3 {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.accordion {
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 1rem 2.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion svg {
+    color: var(--text-color);
+}
+
+.active, .accordion:hover {
+    background-color: var(--secondary-base-color);
+}
+
+.panel {
+    display: none;
+    padding: 0 2rem 2.5rem 2rem;
+    overflow: hidden;
+}
+
+.panel p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
