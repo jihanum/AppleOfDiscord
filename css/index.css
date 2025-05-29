@@ -677,6 +677,7 @@
 
 #videoContainer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -684,5 +685,5 @@
 }
 
 #videoContainer video {
-    margin: 0 2rem;
+    margin: 2rem 2rem;
 }
