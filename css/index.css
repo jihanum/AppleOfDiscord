@@ -324,7 +324,6 @@
     transition: background-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
-
 .speciesImage {
     width: 150px;
     height: 150px;
@@ -332,6 +331,11 @@
     border-radius: 20px;
     margin: 2rem;
     flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.speciesImage:hover {
+    transform: scale(1.15);
 }
 
 #speciesImage1 {
@@ -404,6 +408,10 @@
     #speciesContainer {
         grid-template-columns: 100%;
     }
+
+    #species {
+        padding: 5rem 10vw;
+    }
 }
 
 
@@ -429,9 +437,18 @@
 }
 
 #dimensionsContainer div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
     background-color: var(--base-color);
     border-radius: 20px;
+}
+
+#dimensionsContainer h6 {
+    font-weight: 700;
 }
 
 
@@ -540,7 +557,7 @@
 
 
 #weapons {
-    padding: 5rem 20vw;
+    padding: 5rem 40vw;
     background-color: var(--secondary-base-color);
     transition: background-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
@@ -552,20 +569,21 @@
 #weaponsContainer {
     justify-content: center;
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 100%;
     grid-gap: 1rem;
+    margin: 1rem;
 }
 
-@media screen and (max-width: 1000px) {
-    #weaponsContainer {
-        grid-template-columns: 50%;
-        margin: 1rem 10vw;
+@media screen and (max-width: 2058px) {
+    #weapons {
+        padding: 1rem 20vw;
     }
 }
 
-@media screen and (max-width: 540px) {
-    #weaponsContainer {
-        grid-template-columns: 100%;
+@media screen and (max-width: 600px) {
+    #weapons {
+        padding: 1rem 5vw;
+        text-align: center;
     }
 }
 
