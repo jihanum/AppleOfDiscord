@@ -439,6 +439,10 @@
     margin: 5rem 20vw;
 }
 
+#history div {
+    border-radius: 20px;
+}
+
 #history h3 {
     text-align: center;
     margin: 2rem;
@@ -575,15 +579,15 @@
     padding: 1rem;
 }
 
-#weaponsContainer div p, #weaponsContainer div h3 {
-    margin: 1rem;
+#weaponsContainer div p {
+    margin: 2rem;
     text-align: center;
 }
 
 #weaponsContainer div img {
     margin: 1rem;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
 }
 
 
@@ -594,13 +598,16 @@
 }
 
 #quoteContainer {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    /*display: grid;*/
+    /*grid-template-columns: 50% 50%;*/
     grid-gap: 2rem;
+    align-items: center;
 }
 
 .quote {
     margin: 2rem 2rem 4rem;
+    padding: 1rem;
+    border-radius: 20px;
 }
 
 .quote h6, .quote p {
@@ -675,15 +682,21 @@
     margin: 2rem;
 }
 
+#videos p {
+    text-align: center;
+}
+
 #videoContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     margin: 3rem 0;
 }
 
+
 #videoContainer video {
     margin: 2rem 2rem;
+    border-radius: 20px;
 }

@@ -34,8 +34,9 @@ h2 {
     color: var(--text-color);
 }
 
-.active, .accordion:hover {
+.accordion:hover {
     background-color: var(--secondary-base-color);
+    transform: scale(1.05);
 }
 
 .panel {
