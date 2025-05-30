@@ -335,27 +335,27 @@
 }
 
 #speciesImage1 {
-    background: url("../img/species/eris.jpg") no-repeat center top;
+    background: url("../img/species/eris.webp") no-repeat center top;
     background-size: cover;
 }
 
 #speciesImage2 {
-    background: url("../img/species/hera.jpg") no-repeat center top;
+    background: url("../img/species/hera.webp") no-repeat center top;
     background-size: cover;
 }
 
 #speciesImage3 {
-    background: url("../img/species/athena.jpg") no-repeat center top;
+    background: url("../img/species/athena.webp") no-repeat center top;
     background-size: cover;
 }
 
 #speciesImage4 {
-    background: url("../img/species/aphrodite.jpg") no-repeat center top;
+    background: url("../img/species/aphrodite.webp") no-repeat center top;
     background-size: cover;
 }
 
 #speciesImage5 {
-    background: url("../img/species/paris.jpg") no-repeat center center;
+    background: url("../img/species/paris.webp") no-repeat center center;
     background-size: cover;
 }
 
