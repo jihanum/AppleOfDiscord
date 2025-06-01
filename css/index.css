@@ -477,7 +477,7 @@
 #historyImage1 {
     width: 30vw;
     height: 200px;
-    background: url("../img/gallery/7.webp") no-repeat center top;
+    background: url("../img/gallery/6.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -501,7 +501,7 @@
 #historyImage2 {
     width: 30vw;
     height: 200px;
-    background: url("../img/gallery/14.webp") no-repeat center center;
+    background: url("../img/gallery/12.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -526,7 +526,7 @@
     width: 100%;
     height: 450px;
     margin: 2rem 0;
-    background: url("../img/gallery/4.webp") no-repeat center center;
+    background: url("../img/gallery/5.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -640,15 +640,6 @@
     }
 }
 
-
-#gallery h3 {
-    text-align: center;
-    margin: 2rem;
-}
-
-#gallery {
-    margin: 5rem 0;
-}
 
 
 @media screen and (max-width: 1000px) {
