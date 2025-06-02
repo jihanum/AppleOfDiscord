@@ -191,7 +191,7 @@
 
 @media screen and (max-width: 1000px) {
     #galleryContainer{
-        grid-template-rows: repeat(19, 200px);
+        grid-template-rows: repeat(10, 200px);
         padding: 5rem 5vw;
     }
 }
