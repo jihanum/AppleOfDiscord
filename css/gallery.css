@@ -20,28 +20,73 @@
 
 .galleryImage {
     position: relative;
-    background-color: var(--secondary-base-color);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
     transform: scale(1);
     opacity: 1;
-    cursor: pointer;
     overflow: hidden;
 }
 
+
+.galleryImage:hover {
+    transform: scale(1.025);
+}
 
 .galleryImage.fade-in {
     opacity: 1;
 }
 
-/* Fade-out animation */
 .galleryImage.fade-out {
     opacity: 0;
     transform: translateX(-100px);
 }
 
+.galleryImage .description {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: var(--secondary-accent-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    transition: bottom 0.5s ease;
+}
 
-.galleryImage:hover {
-    transform: scale(1.05);
+/* Close button styling */
+.galleryImage .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: none; /* Hidden by default */
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    z-index: 1;
+}
+
+
+/* Enlarged active image styling */
+.galleryImage.active {
+    transform: scale(1.1); /* Enlarged size */
+    z-index: 10; /* Bring it to the top */
+}
+
+.galleryImage.active .description {
+    bottom: 0; /* Slide up and reveal description */
+}
+
+.galleryImage.active .close-btn {
+    display: block; /* Show close button */
+}
+
+.galleryImage.dimmed {
+    opacity: 0.5;
 }
 
 #galleryImage1 {
