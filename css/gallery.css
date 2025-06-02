@@ -194,10 +194,6 @@
         grid-template-rows: repeat(19, 200px);
         padding: 5rem 5vw;
     }
-
-    .galleryImage {
-        grid-column: 1 / span 6;
-    }
 }
 
 
