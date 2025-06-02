@@ -105,7 +105,7 @@
 
 #aboutImage {
     background-color: var(--secondary-base-color);
-    background: url("../img/gallery/1.webp") no-repeat center center;
+    background: url("../img/aboutPhoto.webp") no-repeat center center;
     background-size: cover;
     border-radius: 20px;
     width: 250px;
@@ -363,7 +363,7 @@
 }
 
 #speciesImage6 {
-    background: url("../img/gallery/8.webp") no-repeat center top;
+    background: url("../img/gallery/10.webp") no-repeat center top;
     background-size: cover;
 }
 
