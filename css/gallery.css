@@ -11,17 +11,6 @@
     position: relative;
 }
 
-@media screen and (max-width: 1000px) {
-    #galleryContainer{
-        grid-template-rows: repeat(19, 200px);
-        padding: 5rem 5vw;
-    }
-
-    .galleryImage {
-        grid-column: 1 / span 6;
-    }
-}
-
 .galleryImage {
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -199,4 +188,16 @@
     background-size: cover;
     grid-column: 4 / span 3;
 }
+
+@media screen and (max-width: 1000px) {
+    #galleryContainer{
+        grid-template-rows: repeat(19, 200px);
+        padding: 5rem 5vw;
+    }
+
+    .galleryImage {
+        grid-column: 1 / span 6;
+    }
+}
+
 
