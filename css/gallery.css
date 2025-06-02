@@ -12,11 +12,8 @@
 }
 
 
-@media screen and (max-width: 1000px) {
-    #galleryContainer{
-        padding: 5rem 5vw;
-    }
-}
+
+
 
 .galleryImage {
     opacity: 0;
