@@ -1,24 +1,35 @@
-h3, li {
-    color: var(--text-color);
+#referencesContainer {
+    margin: 5rem 20vw;
 }
 
-li {
-    margin: 1rem 0;
+@media screen and (max-width: 768px) {
+    #referencesContainer {
+        margin: 5rem 10vw;
+    }
 }
 
-h4 {
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-#referencesContainer li, #referencesContainer h3, #referencesContainer h4 {
+#referencesContainer li, #referencesContainer h3 {
     margin: 2rem 3rem;
+    color: var(--text-color);
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+#referencesContainer li {
+    padding-left: 5rem ;
+    text-indent: -5rem ;
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: none;
 }
 
 #referencesContainer a {
     color: var(--accent-color);
+    transition: font-weight 0.5s ease;
+}
+
+#referencesContainer a:hover {
+    font-weight: 900;
 }
