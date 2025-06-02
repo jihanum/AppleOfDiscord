@@ -53,7 +53,6 @@
     transition: bottom 0.5s ease;
 }
 
-/* Close button styling */
 .galleryImage .close-btn {
     position: absolute;
     top: 10px;
@@ -64,25 +63,23 @@
     color: white;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    display: none; /* Hidden by default */
+    display: none;
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
     z-index: 1;
 }
 
-
-/* Enlarged active image styling */
 .galleryImage.active {
-    transform: scale(1.1); /* Enlarged size */
-    z-index: 10; /* Bring it to the top */
+    transform: scale(1.1);
+    z-index: 10;
 }
 
 .galleryImage.active .description {
-    bottom: 0; /* Slide up and reveal description */
+    bottom: 0;
 }
 
 .galleryImage.active .close-btn {
-    display: block; /* Show close button */
+    display: block;
 }
 
 .galleryImage.dimmed {

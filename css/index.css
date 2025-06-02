@@ -16,13 +16,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensure the loader is on top of everything */
+    z-index: 1000;
     width: 100vw;
     height: 100vh;
-    display: flex; /* Center content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background-color: #000000; /* Loader background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
     transition: opacity 0.7s, visibility 0.7s;
     transition-delay: 0.2s;
 }
@@ -48,7 +48,7 @@
     animation: sizeIn 1.25s ease;
     animation-delay: 0.25s;
     background-image: url("../img/titlePage2.webp");
-    background-position: center bottom; /* Start at the top */
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 100vw;
     background-attachment: scroll;
@@ -290,14 +290,14 @@
 
 
 #whereFound {
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    width: 100%; /* Ensure it takes the full width */
-    box-sizing: border-box; /* Include padding/borders in height calculation */
-    text-align: center; /* Ensure inner text is centered */
-    padding: 5rem 20vw; /* Optional padding for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5rem 20vw;
 }
 
 
@@ -658,20 +658,19 @@
     }
 
     #weaponsContainer > div {
-        width: 100%; /* Each weapon container spans full available width */
-        margin-bottom: 1em; /* Add spacing between them */
+        width: 100%;
+        margin-bottom: 1em;
     }
 
-    /* Improve the width of #quotes */
     #quotes {
-        width: 90%; /* Wider quotes section for mobile */
-        margin: 0 auto; /* Center horizontally */
-        padding: 1em; /* Add slight padding */
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em;
     }
 
     .quote {
-        margin: 4rem auto; /* Center the individual blocks */
-        width: 100%; /* Make quotes span the full width of the container */
+        margin: 4rem auto;
+        width: 100%;
     }
 }
 
