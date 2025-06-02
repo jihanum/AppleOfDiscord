@@ -5,9 +5,10 @@
 #galleryContainer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 400px));
     grid-gap: 2rem;
     padding: 5rem 20vw;
-    grid-template-rows: repeat(10, 400px));
+
     position: relative;
 }
 
