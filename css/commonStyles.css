@@ -57,8 +57,7 @@ section {
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0.75;
   border-radius: 50%;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
+  transition: top 0.15s ease-out, left 0.15s ease-out;
 }
 
 
@@ -148,6 +147,300 @@ html {
   line-height: 1.4;
   scroll-behavior: smooth;
 }
+
+
+
+
+
+
+/* Header */
+
+#themeSwitch {
+  padding: 0.25rem;
+  border-radius: 50%;
+  background-color: var(--secondary-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#themeSwitch svg {
+  fill: var(--header-footer-color);
+}
+
+#themeSwitch svg:first-child {
+  display: none;
+}
+
+.darkMode #themeSwitch svg:last-child {
+  display: none;
+}
+
+.darkMode #themeSwitch svg:first-child {
+  display: block;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  z-index: 998;
+  animation: popIn 1s ease;
+  display: flex;
+  align-items: center;
+  padding: 0 1.25em;
+  background-color: var(--header-footer-color);
+  transition: background-color 1s ease;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+header:hover p {
+  font-weight: 900;
+}
+
+header:hover img {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+#logo img {
+  width: 3em;
+  height: 3em;
+  margin: 1.25em;
+  transition: width 0.7s ease, height 0.7s ease;
+}
+
+@media screen and (max-width: 768px) {
+  #logo img {
+    margin: 0.75em 0 0.75em 0.75em;
+  }
+}
+
+#logo p {
+  font-size: 1em;
+  font-weight: 800;
+  transition: font-weight 0.7s ease;
+}
+
+
+#linksHeader {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+#linksHeader li {
+  list-style-type: none;
+  margin: 0.5em;
+  font-weight: 300;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  transition: background-color 0.7s ease-in-out;
+}
+
+#linksHeader li:hover {
+  background-color: var(--secondary-accent-color);
+}
+
+
+.off-screen-menu {
+  background-color: var(--header-footer-color);
+  height: 100%;
+  width: 70%;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  left: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  transition: 0.3s ease;
+}
+
+.off-screen-menu.active {
+  left: 0;
+}
+
+.off-screen-menu li {
+  list-style-type: none;
+  font-size: 1.25rem;
+  margin: 1.25rem;
+  font-weight: 300;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+}
+
+.hamMenu {
+  display: none;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: 1em;
+  position: relative;
+}
+
+.hamMenu span {
+  height: 4px;
+  width: 70%;
+  background-color: var(--text-color);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+
+.hamMenu span:nth-child(1) {
+  top: 25%
+}
+
+.hamMenu span:nth-child(3) {
+  top: 75%
+}
+
+.hamMenu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamMenu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamMenu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+@media screen and (max-width: 480px) {
+  .hamMenu {
+    display: block;
+  }
+
+  #linksHeader {
+    display: none;
+  }
+
+  #logo p {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #linksHeader a {
+    font-size: 0.75em;
+  }
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  background: var(--header-footer-color);
+  margin: 0;
+  padding: 0 1.25em;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  font-weight: 300;
+  transition: background-color 1s ease;
+  width: 100%;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer img {
+  width: 3rem;
+  height: 3rem;
+  margin: 1.25em;
+}
+
+footer p {
+  font-size: 0.75em;
+  margin: 1.25em;
+}
+
+footer span {
+  width: 5px;
+  height: 5px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  margin: 1.25em 0.5em;
+}
+
+#bigClassName {
+  display: flex;
+}
+
+#smallClassName {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  footer {
+    font-size: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0.5em;
+  }
+
+  footer div {
+    flex-direction: column;
+  }
+
+  .siteName {
+    display: none;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  #bigClassName {
+    display: none;
+  }
+
+  #smallClassName {
+    display: flex;
+  }
+}
+
+
+
+
 
 /*
  * Remove text-shadow in selection highlight:

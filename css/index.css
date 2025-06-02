@@ -50,14 +50,13 @@
     background-image: url("../img/titlePage2.webp");
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100%;
     background-attachment: scroll;
-    padding-bottom: 6vh;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: end;
     height: 90vh;
-    box-sizing: border-box;
 }
 
 
@@ -704,8 +703,19 @@
     margin: 3rem 0;
 }
 
+#videoContainer div {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #videoContainer video {
-    margin: 2rem 2rem;
+    width: 100%;
     border-radius: 20px;
+    padding: 1rem;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
 }
