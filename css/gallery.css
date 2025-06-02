@@ -11,6 +11,10 @@
     position: relative;
 }
 
+@media screen and (max-width: 1000px) {
+    padding: 5rem 5vw;
+}
+
 .galleryImage {
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
