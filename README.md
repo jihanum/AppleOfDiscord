@@ -5,4 +5,4 @@ Literary Studies 10 Enriched with Ms. Moreno
 
 Greek Figure Website Project
 
-This website has been coded completely by Ji Han Um.
+This website has been coded by Ji Han Um.
