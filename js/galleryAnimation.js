@@ -1,4 +1,3 @@
-// JavaScript to apply reversible animations on scroll
 document.addEventListener("DOMContentLoaded", () => {
   const galleryImages = document.querySelectorAll(".galleryImage");
 
