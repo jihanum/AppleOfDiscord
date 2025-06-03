@@ -8,8 +8,13 @@
     grid-template-rows: repeat(10, 400px);
     grid-gap: 2rem;
     padding: 5rem 20vw;
+
     position: relative;
 }
+
+
+
+
 
 .galleryImage {
     opacity: 0;
