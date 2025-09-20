@@ -1,8 +1,7 @@
 Ji Han Um, Rozita, Maya
 
 Literary Studies 10 Enriched - Ms. Moreno
+Greek Figure Website School Project
 2025
 
-Greek Figure Website School Project
-
-This website has been coded completely by Ji Han.
+Source code by Ji Han.
